@@ -17,19 +17,19 @@ package com.example.android.background.sync;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.support.annotation.Nullable;
 
+/**
+ * An {@link IntentService} subclass for handling asynchronous task requests in
+ * a service on a separate handler thread.
+ */
 public class WaterReminderIntentService extends IntentService {
 
-    /**
-     * Creates an IntentService.  Invoked by your subclass's constructor.
-     */
     public WaterReminderIntentService() {
         super("WaterReminderIntentService");
     }
 
     @Override
-    protected void onHandleIntent(@Nullable Intent intent) {
+    protected void onHandleIntent(Intent intent) {
         String action = intent.getAction();
         ReminderTasks.executeTask(this, action);
     }

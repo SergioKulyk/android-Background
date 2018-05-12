@@ -25,9 +25,6 @@
             android:id="@+id/ib_water_increment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/tv_charging_reminder_count"
-            android:layout_alignEnd="@+id/tv_charging_reminder_count"
-            android:layout_marginBottom="12dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:contentDescription="@string/water_increment_content_desc"
             android:onClick="incrementWater"
@@ -88,4 +85,13 @@
             android:text="@string/default_charge_notification_count" />
 
     </RelativeLayout>
+
+    <!-- COMPLETED (14) Add a button for testing your notification with an onClick method called testNotification -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="testNotification"
+        android:text="Test Notification" />
+
 </LinearLayout>
